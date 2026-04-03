@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="active">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>smarttaklifnoma.uz</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+   <div id="loader">
+      <div class="loader-content">
+         <div class="spinner"></div>
+         <p class="loading-text"><span id="load-percent">0</span>%</p>
+      </div>
+   </div>
+   <audio class="music" id="music" preload="auto" playsinline>
+      <source src="music/Muhammad_Al_Muqit_Wedding.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+   </audio>
+   <a id="sound-toggle" href="#">
+      <img src="images/sound-on.svg" alt="Sound on">
+      <img src="images/sound-mute.svg" alt="Sound off">
+   </a>
+   <main class="main">
+      <section class="introduction active">
+         <!--  <div class="introduction-image scale-fade">
+            <img src="images/introduction.jpg" alt="">
+         </div> -->
+         <div class="container">
+            <h1 class="motion-up">
+               Пригласительное на свдьбу
+            </h1>
+            <p class="motion-up">
+               16.04.2026
+            </p>
+            <button class="motion-up btn btn-white btn-animate" type="button" id="open">
+               Вход
+            </button>
+         </div>
+      </section>
+
+      <section class="hero blur-on-scroll">
+         <div class="container">
+            <div class="hero-content">
+               <div class="hero-text-cover">
+                  <h2 class="hero-title motion-up">
+                     Дорогие гости!
+                  </h2>
+                  <h3>
+                     МЫ ЖЕНИМСЯ!
+                  </h3>
+                  <p class="motion-up">
+                     Это радостное событие мы хотим отметить в кругу самых близких для нас людей.
+                  </p>
+                  <p class="motion-up">
+                     Будем очень рады, если в этот день, вы сможете присутствовать на нашем празднике.
+                  </p>
+                  <p class="motion-up">
+                     Свадьба состоится
+                  </p>
+               </div>
+
+               <div class="hero-image scale-fade">
+                  <img src="images/bride.jpg" alt="Hero image">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="agenda">
+         <div class="container">
+            <h2 class="title">
+               Программа дня
+            </h2>
+            <ul class="agenda-list">
+               <li class="agenda-item">
+                  <span>
+                     12:00
+                  </span>
+                  <img src="" alt="agenda icon">
+                  <div>
+                     <h5>
+                        Сбор гостей
+                     </h5>
+                     <p>
+                        Просим взять с собой хорошее настроение и свои улыбки
+                     </p>
+                  </div>
+               </li>
+
+               <li class="agenda-item">
+                  <span>
+                     12:30
+                  </span>
+                  <img src="" alt="agenda icon">
+                  <div>
+                     <h5>
+                        Свадебная церемония
+                     </h5>
+                     <p>
+                        На всякий случай приготовьте носовые платочки для трогательного момента
+                     </p>
+                  </div>
+               </li>
+
+               <li class="agenda-item">
+                  <span>
+                     14:00
+                  </span>
+                  <img src="" alt="agenda icon">
+                  <div>
+                     <h5>
+                        Праздничный банкет
+                     </h5>
+                     <p>
+                        Время вкусной еды, танцев и развлечений
+                     </p>
+                  </div>
+               </li>
+
+               <li class="agenda-item">
+                  <span>
+                     23:00
+                  </span>
+                  <img src="" alt="agenda icon">
+                  <div>
+                     <h5>
+                        Окончание мероприятия
+                     </h5>
+                     <p>
+                        К сожалению, даже такой прекрасный вечер может закончиться
+                     </p>
+                  </div>
+               </li>
+            </ul>
+
+            <div class="section-line"></div>
+         </div>
+      </section>
+
+      <section class="wedding-day motion-up blur-on-scroll">
+         <div class="container">
+            <div class="countdown">
+               <h2 class="title">До свадьбы осталось</h2>
+
+               <div class="countdown-timer">
+                  <div class="time-block">
+                     <span id="days">00</span>
+                     <small>kun</small>
+                  </div>
+
+                  <div class="time-block">
+                     <span id="hours">00</span>
+                     <small>soat</small>
+                  </div>
+
+                  <div class="time-block">
+                     <span id="minutes">00</span>
+                     <small>minut</small>
+                  </div>
+
+                  <div class="time-block">
+                     <span id="seconds">00</span>
+                     <small>sekund</small>
+                  </div>
+               </div>
+
+               <div class="section-line"></div>
+            </div>
+         </div>
+      </section>
+
+      <section class="map blur-on-scroll">
+         <div class="container">
+            <h2 class="title gathering-title">
+               Локация
+            </h2>
+            <p>
+               Наша савдьба пройдёт в Ресторане «Вау House»
+            </p>
+            <p>
+               Он находится по адресу: <br>
+               тестовая локация
+            </p>
+            <img src="" alt="The location image">
+            <p>
+               Мы подготовили для вас карту, чтобы вы точно добрались и порадовали нас своим присутствием.
+            </p>
+            <iframe
+               src="https://yandex.com/map-widget/v1/?um=constructor%3A9accdd30b06ae2dca948561028648d99fb2684136f8b2710b176edd6f44ae7fb&amp;source=constructor"
+               width="500" height="400" frameborder="0"></iframe>
+            <div class="section-line"></div>
+      </section>
+
+      <section class="details">
+         <div class="container">
+            <h2>
+               Детали
+            </h2>
+            <p>
+               Ваши улыбки и смех подарят нам незабываемое счастье в этот день, а пожелания в конвертах помогут
+               осуществить наши мечты!
+            </p>
+            <div class="line"></div>
+            <p>
+               Приятным комплиментом для нас вместо цветов будет бутылочка вашего любимого вина, которую мы откроем на
+               ближайшем совместном празднике.﻿
+            </p>
+            <div class="line"></div>
+            <p>
+               Будем благодарны, если вы воздержитесь от криков «Горько» на празднике, ведь поцелуй — это знак выражения
+               чувств, он не может быть по заказу.
+            </p>
+            <div class="section-line"></div>
+         </div>
+      </section>
+
+      <section class="dress-code">
+         <div class="container">
+            <h2>
+               Дресс-код
+            </h2>
+            <p>
+               Нам будет очень приятно, если вы учтете наши пожелания и при выборе одежды предпочтёте вечерние наряды в
+               представленной ниже гамме:
+            </p>
+            <div class="colors-wrapper">
+               <div class="colors-item"></div>
+               <div class="colors-item"></div>
+               <div class="colors-item"></div>
+               <div class="colors-item"></div>
+               <div class="colors-item"></div>
+            </div>
+            <div class="section-line"></div>
+         </div>
+      </section>
+
+      <section class="contacts blur-on-scroll">
+         <div class="container">
+            <h2 class="title">
+               Присутствие на торжестве
+            </h2>
+            <form action="" id="guest-form">
+               <p class="contacts-text">
+                  Ваши ответы на вопросы очень помогут нам при организации свадьбы.
+                  <br>
+                  <br>
+                  Будем ждать ответ до 15.10.2026 г.
+               </p>
+
+               <h3 class="subtitle">
+                  Сможете ли вы присутствовать на торжестве?
+               </h3>
+
+               <label for="yes">
+                  <input type="radio" name="" value="Men boraman / Biz boramiz" id="yes">
+                  Я приду / Мы придем
+               </label>
+               <label for="no">
+                  <input type="radio" name="" value="Bora olmasam kerak" id="no">
+                  Прийти не получится
+               </label>
+               <label for="addition">
+                  <input type="radio" name="" value="Bora olmasam kerak" id="addition">
+                  Буду со своей парой (+1)
+               </label>
+
+               <div>
+                  <h3 class="subtitle">
+                     Введите Имя и Фамилию
+                  </h3>
+                  <p class="contacts-subtext">
+                     если вы будете парой или семьей, то внесите все имена и фамилии
+                  </p>
+                  <label for="name">
+                     <input type="text" name="entry.1561194384" id="name" placeholder="Ф.И.О" required>
+                  </label>
+               </div>
+
+               <div>
+                  <h3 class="subtitle">
+                     Предпочтения по напиткам:
+                  </h3>
+
+                  <p class=" contacts-subtext">
+                     можно выбрать несколько вариантов
+                  </p>
+
+                  <div class="form-checkboxes">
+                     <input type="checkbox" name="" value="Вино красное">
+                     <span>
+                        Вино красное
+                     </span>
+                  </div>
+
+                  <div class="form-checkboxes">
+                     <input type="checkbox" name="" value="Вино белое">
+                     <span>
+                        Вино белое
+                     </span>
+                  </div>
+
+                  <div class="form-checkboxes">
+                     <input type="checkbox" name="" value="Виски">
+                     <span>
+                        Виски
+                     </span>
+                  </div>
+
+                  <div class="form-checkboxes">
+                     <input type="checkbox" name="" value="Водка">
+                     <span>
+                        Водка
+                     </span>
+                  </div>
+
+                  <div class="form-checkboxes">
+                     <input type="checkbox" name="" value="Шампанское">
+                     <span>
+                        Шампанское
+                     </span>
+                  </div>
+
+                  <div class="form-checkboxes">
+                     <input type="checkbox" name="" value="Что-нибудь безалкогольное">
+                     <span>
+                        Что-нибудь безалкогольное
+                     </span>
+                  </div>
+               </div>
+
+
+               <button type="submit">
+                  Отправить
+               </button>
+            </form>
+
+            <div class="contacts-img">
+               <img src="" alt="contacts image">
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer blur-on-scroll">
+         <h2>
+            Диёр & хуй знает кто
+         </h2>
+      </footer>
+   </main>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/motion@10.16.2/dist/motion.min.js"></script>
+   <script src="js/main-v2.js"></script>
+</body>
+
+</html>

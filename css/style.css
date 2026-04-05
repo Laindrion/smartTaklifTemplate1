@@ -584,10 +584,13 @@ p {
       margin-top: 20px;
    }
 
-   iframe {
+   iframe,
+   .map-image {
       max-width: 800px;
       width: 100%;
    }
+
+
 }
 
 .map-description {
@@ -621,13 +624,17 @@ p {
 
 /* DRESS CODE SECTION */
 .dress-code {
-   text-align: center;
-   padding: 0;
 
-   p {
-      max-width: 500px;
-      width: 100%;
-      margin: 0 auto 30px auto;
+   .colors-wrapper {
+      display: flex;
+      gap: 20px;
+   }
+
+
+   .colors-item {
+      width: 80px;
+      height: 80px;
+      background-color: #000;
    }
 }
 
@@ -635,11 +642,12 @@ p {
 .contacts {
    text-align: center;
    padding-bottom: 100px;
+   text-align: left;
 
    p {
       max-width: 550px;
-      margin: 0 auto 30px auto;
    }
+
 
    .subtitle,
    label:has(input[type="text"]) {
@@ -691,7 +699,6 @@ p {
       cursor: pointer;
 
       display: block;
-      margin: 0 auto;
       margin-top: 40px;
       text-transform: uppercase;
 
@@ -703,7 +710,27 @@ p {
          color: #000;
       }
    }
+
+
 }
+
+.contacts-inner {
+   display: flex;
+   gap: 60px;
+}
+
+.contacts-img {
+   max-width: 500px;
+   height: 700px;
+   width: 100%;
+
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
 
 /* FOOTER SECTION */
 .footer {
@@ -718,7 +745,7 @@ p {
 
    color: #fff;
 
-   background-image: url('../images/introduction.jpg');
+   background-image: url('../images/footer-img.jpg');
    background-size: cover;
    background-position: top;
 

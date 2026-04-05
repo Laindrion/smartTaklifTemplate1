@@ -312,7 +312,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
          await fetch(
-            "https://docs.google.com/forms/d/e/1FAIpQLSfwY_jwzV7tJTZZ6UfLZaqyK5QJGyYaIbAZwgel15830WgwyQ/formResponse", /* formResponse */
+            "", /* formResponse */
             {
                method: "POST",
                mode: "no-cors",

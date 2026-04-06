@@ -136,8 +136,8 @@ section {
 }
 
 .container {
-   width: 100%;
    max-width: 1200px;
+   width: 100%;
    padding: 0 15px;
    margin: 0 auto;
 }
@@ -447,6 +447,23 @@ p {
    }
 }
 
+/* AGENDA SECTION */
+.agenda {}
+
+.agenda-list {
+   display: flex;
+   flex-direction: column;
+}
+
+.agenda-item {
+   display: flex;
+
+   img {
+      width: 84px;
+      height: 84px;
+   }
+}
+
 /* SINCERELY SECTION */
 .sincerely {
    padding-top: 20px;
@@ -589,8 +606,6 @@ p {
       max-width: 800px;
       width: 100%;
    }
-
-
 }
 
 .map-description {
@@ -622,11 +637,31 @@ p {
    text-decoration: none;
 }
 
+/* DETAILS SECTION */
+.details {
+   text-align: center;
+
+   p {
+      max-width: 560px;
+      margin: 20px auto;
+   }
+
+   .line {}
+}
+
 /* DRESS CODE SECTION */
 .dress-code {
+   text-align: center;
+
+   p {
+      max-width: 560px;
+      width: 100%;
+      margin-bottom: 40px;
+   }
 
    .colors-wrapper {
       display: flex;
+      justify-content: center;
       gap: 20px;
    }
 
@@ -635,6 +670,22 @@ p {
       width: 80px;
       height: 80px;
       background-color: #000;
+   }
+
+   .colors-item:nth-child(2) {
+      background-color: #570422;
+   }
+
+   .colors-item:nth-child(3) {
+      background-color: #9E5165;
+   }
+
+   .colors-item:nth-child(4) {
+      background-color: #DBCDB2;
+   }
+
+   .colors-item:nth-child(5) {
+      background-color: #9B1F5B;
    }
 }
 
@@ -648,13 +699,12 @@ p {
       max-width: 550px;
    }
 
-
    .subtitle,
    label:has(input[type="text"]) {
       font-size: 20px;
       font-weight: 600;
-      margin-bottom: 20px;
       text-align: left;
+      max-width: 455px;
 
       font-family: 'Playfair Display', serif;
    }
@@ -712,6 +762,12 @@ p {
    }
 
 
+}
+
+#guest-form div {
+   margin: 20px 0;
+   display: flex;
+   flex-direction: column;
 }
 
 .contacts-inner {
